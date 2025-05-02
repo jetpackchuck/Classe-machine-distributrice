@@ -8,7 +8,7 @@ class Machine_distributrice
 {
 private:
 	std::vector<std::vector<Case>> _cases;
-	std::list<float> _logVentes;
+	std::list<Produit> _logVentes;
 	std::map<Produit, float prix> _prixProduits;
 
 public:
