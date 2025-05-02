@@ -5,7 +5,7 @@
 using namespace std;
 
 void Machine_distributrice::newMachine() {
-	vector<vector<Case>> cases;
+	vector<vector<Case>> cases(string, Produit);
 	list<float> logVentes;
 	map<Produit, float> prixProduits;
 }
