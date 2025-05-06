@@ -1,14 +1,16 @@
 #pragma once
 #include <iostream>
 #include <stack>
+#include "produit.h"
 
 class Cases {
 private:
 	std::stack<Produit> _produits;
 	int _capacite;
-	std::string _id;
+	int _id;
 public:
-	Cases(std::string id, Produit produit, int capacite = 10);
+	Cases(int id, Produit produit, int capacite = 10);
 	void refill(Produit produit, int quantite);
 	void vente();
-	bool estVide();};
+	bool estVide();
+};

@@ -1,9 +1,10 @@
 #include "Cases.h"
 #include "fstream"
+#include "produit.h"
 
 using namespace std;
 
-Cases::Cases(string id, Produit produit, int capacite = 10)
+Cases::Cases(int id, Produit produit, int capacite = 10)
 {
 	this->_id = id;
 	
@@ -22,7 +23,7 @@ void Cases::refill(Produit produit, int quantite)
 	ofstream profit("Profit.txt");
 	if (profit.is_open())
 	{
-		profit << "-" << quantite*(this->_produits.top()->_prixAchat);
+		profit << "-" << quantite*(this->_produits.top().getPrixAchat());
 		profit << ";";
 	}
 	profit.close();
@@ -31,12 +32,12 @@ void Cases::refill(Produit produit, int quantite)
 void Cases::vente()
 {
 	this->_produits.pop();
-	this->_produits.top()->_nbVentes++;
+	this->_produits.top().addNbVentes();
 	
 	ofstream profit("Profit.txt");
 	if (profit.is_open())
 	{
-		profit << this->_produits.top()->_prixVente;
+		profit << this->_produits.top().getPrixVente();
 		profit << ";";
 	}
 	profit.close();

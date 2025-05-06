@@ -18,7 +18,7 @@ public:
     void setEstSansLactose(bool sansLactose);
 
 
-void afficher() const override;
+
 };
 
 #endif // BOISSON_H
