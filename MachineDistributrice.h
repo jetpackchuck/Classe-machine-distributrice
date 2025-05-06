@@ -3,13 +3,14 @@
 #include <vector>
 #include <list>
 #include <map>
+#include "Cases.h"
 
 class Machine_distributrice
 {
 private:
-	std::vector<std::vector<Case>> _cases;
+	std::vector<std::vector<Cases>> _cases;
 	std::list<Produit> _logVentes;
-	std::map<Produit, float prix> _prixProduits;
+	std::map<Produit, float> _prixProduits;
 
 public:
 	void newMachine();
