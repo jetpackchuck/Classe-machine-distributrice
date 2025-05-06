@@ -36,9 +36,9 @@ void Produit::setPrixAchat(float prixA)
     _prixAchat=prixA;
 }
 
-void Produit::setNbVentes(float nb)
+void Produit::addNbVentes()
 {
-    _nbVentes=nb;
+    _nbVentes++;
 }
 
 void Produit::setNom(std::string nom)

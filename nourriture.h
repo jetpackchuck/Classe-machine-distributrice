@@ -19,7 +19,7 @@ public:
     void setPoids(float poids);
     void setEstVege(bool vege);
 
-    void afficher() const override;
+ 
 };
 
 #endif // NOURRITURE_H

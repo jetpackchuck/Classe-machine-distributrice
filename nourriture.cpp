@@ -22,12 +22,4 @@ void Nourriture::setEstVege(bool vege)
 {
     _estVege=vege;
 }
-void Nourriture::afficher() const {
-    std::cout << "Nom : " << getNom() << std::endl;
-    std::cout << "Type : Nourriture" << std::endl;
-    std::cout << "Prix achat : " << getPrixAchat() << std::endl;
-    std::cout << "Prix vente : " << getPrixVente() << std::endl;
-    std::cout << "Poids : " << _poids << " g" << std::endl;
-    std::cout << "Végétarien : " << (_estVege ? "Oui" : "Non") << std::endl;
-    std::cout << "-----------------------------" << std::endl;
-}
+

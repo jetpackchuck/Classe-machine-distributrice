@@ -1,15 +1,15 @@
-/*#include "mainwindow.h"
-
-#include <QApplication>
-
-int main(int argc, char *argv[])
-{
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    return a.exec();
-}*/
-#include <QCoreApplication>
+//#include "mainwindow.h"
+//
+//#include <QApplication>
+//
+//int main(int argc, char *argv[])
+//{
+//    QApplication a(argc, argv);
+//    MainWindow w;
+//    w.show();
+//    return a.exec();
+//}
+//#include <QCoreApplication>
 #include "CSVParser.h"
 #include "Boisson.h"
 #include "Nourriture.h"
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication app(argc, argv);
+    //QCoreApplication app(argc, argv);
 
     std::ifstream fichier("C:/Users/marcl/Downloads/tableConvert.com_7di07o.csv");
     if (!fichier) {

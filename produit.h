@@ -20,10 +20,9 @@ public:
 
     void setPrixVente(float prixV);
     void setPrixAchat(float prixA);
-    void setNbVentes(float nb);
+    void addNbVentes();
     void setNom(std::string nom);
 
-    virtual void afficher() const = 0;
 };
 
 #endif // PRODUIT_H
