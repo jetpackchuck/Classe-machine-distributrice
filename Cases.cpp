@@ -23,24 +23,28 @@ void Cases::refill(Produit produit, int quantite)
 	ofstream profit("Profit.txt");
 	if (profit.is_open())
 	{
-		profit << "-" << quantite*(this->_produits.top().getPrixAchat());
 		profit << ";";
+		profit << "-" << quantite*(this->_produits.top().getPrixAchat());
 	}
 	profit.close();
+
 }
 
-void Cases::vente()
+void Cases::vente(machineDistributrice machine)
 {
+	machine.addVente(this->_produits.top());
+
 	this->_produits.pop();
 	this->_produits.top().addNbVentes();
 	
 	ofstream profit("Profit.txt");
 	if (profit.is_open())
 	{
+		profit << ";"; //Avant ou apres ?
 		profit << this->_produits.top().getPrixVente();
-		profit << ";";
 	}
 	profit.close();
+
 }
 
 bool Cases::estVide()
