@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stack>
 #include "produit.h"
+#include "MachineDistributrice.h"
 
 class Cases {
 private:
@@ -11,6 +12,6 @@ private:
 public:
 	Cases(int id, Produit produit, int capacite = 10);
 	void refill(Produit produit, int quantite);
-	void vente();
+	void vente(machineDistributrice machine);
 	bool estVide();
 };
