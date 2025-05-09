@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Machine_distributrice::newMachine(Produit p1, Produit p2, Produit p3, Produit p4, Produit p5, Produit p6, Produit p7, Produit p8, Produit p9, Produit p10, Produit p11, Produit p12, Produit p13, Produit p14, Produit p15, Produit p16, Produit p17, Produit p18, Produit p19, Produit p20, Produit p21, Produit p22, Produit p23, Produit p24, Produit p25, Produit p26, Produit p27, Produit p28, Produit p29, Produit p30) {
+void machineDistributrice::newMachine(Produit p1, Produit p2, Produit p3, Produit p4, Produit p5, Produit p6, Produit p7, Produit p8, Produit p9, Produit p10, Produit p11, Produit p12, Produit p13, Produit p14, Produit p15, Produit p16, Produit p17, Produit p18, Produit p19, Produit p20, Produit p21, Produit p22, Produit p23, Produit p24, Produit p25, Produit p26, Produit p27, Produit p28, Produit p29, Produit p30) {
 	
 	vector<Cases> ligne1;
 	ligne1.push_back(Cases(11, p1, 10));
@@ -56,4 +56,11 @@ void Machine_distributrice::newMachine(Produit p1, Produit p2, Produit p3, Produ
 	this->_cases.push_back(ligne6);
 
 	map<Produit, float> prixProduits;
+
+	this->_motDePasse = "1234";
+}
+
+void machineDistributrice::addVente(Produit produit)
+{
+	this->_logVentes.push_back(produit);
 }
