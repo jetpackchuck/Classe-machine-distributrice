@@ -2,16 +2,19 @@
 #include <iostream>
 #include <stack>
 #include "produit.h"
-#include "MachineDistributrice.h"
+
 
 class Cases {
 private:
-	std::stack<Produit> _produits;
+
 	int _capacite;
-	int _id;
+
 public:
-	Cases(int id, Produit produit, int capacite = 10);
+    int _id;
+    Produit* _produit;
+    std::stack<Produit*> _produits;
+    Cases(int id, Produit* produit, int capacite=10);
 	void refill(Produit produit, int quantite);
-	void vente(machineDistributrice machine);
+
 	bool estVide();
 };

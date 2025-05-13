@@ -21,6 +21,16 @@ float Produit::getNbVentes() const
     return _nbVentes;
 }
 
+string Produit::getType() const
+{return _type;
+
+}
+
+string Produit::getLien() const
+{
+    return _lienImage;
+}
+
 string Produit::getNom() const
 {
     return _nom;
@@ -36,12 +46,22 @@ void Produit::setPrixAchat(float prixA)
     _prixAchat=prixA;
 }
 
-void Produit::addNbVentes()
+void Produit::setNbVentes(float nb)
 {
-    _nbVentes++;
+    _nbVentes=nb;
 }
 
 void Produit::setNom(std::string nom)
 {
     _nom=nom;
+}
+
+void Produit::setLien(std::string lien)
+{
+    _lienImage=lien;
+}
+
+void Produit::setType(std::string type)
+{
+    _type=type;
 }

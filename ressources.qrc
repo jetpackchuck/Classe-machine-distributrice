@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>images/boisson1.png</file>
+        <file>images/boisson2.png</file>
+        <file>images/boisson3.png</file>
+        <file>images/boisson4.png</file>
+        <file>images/boisson5.png</file>
+        <file>images/boisson6.png</file>
+        <file>images/boisson7.png</file>
+        <file>images/boisson8.png</file>
+        <file>images/boisson9.png</file>
+        <file>images/boisson10.png</file>
+        <file>images/boisson11.png</file>
+        <file>images/boisson12.png</file>
+        <file>images/boisson13.png</file>
+        <file>images/boisson14.png</file>
+        <file>images/boisson15.png</file>
+        <file>images/nourriture1.png</file>
+        <file>images/nourriture2.png</file>
+        <file>images/nourriture3.png</file>
+        <file>images/nourriture4.png</file>
+        <file>images/nourriture5.png</file>
+        <file>images/nourriture6.png</file>
+        <file>images/nourriture7.png</file>
+        <file>images/nourriture8.png</file>
+        <file>images/nourriture9.png</file>
+        <file>images/nourriture10.png</file>
+        <file>images/nourriture11.png</file>
+        <file>images/nourriture12.png</file>
+        <file>images/nourriture13.png</file>
+        <file>images/nourriture14.png</file>
+        <file>images/nourriture15.png</file>
+        <file>images/Produits_avec_noms.csv</file>
+    </qresource>
+</RCC>

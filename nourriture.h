@@ -19,7 +19,7 @@ public:
     void setPoids(float poids);
     void setEstVege(bool vege);
 
- 
+
 };
 
 #endif // NOURRITURE_H

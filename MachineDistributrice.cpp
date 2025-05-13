@@ -1,13 +1,14 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
 #include "MachineDistributrice.h"
 
 using namespace std;
 
-void machineDistributrice::newMachine(Produit p1, Produit p2, Produit p3, Produit p4, Produit p5, Produit p6, Produit p7, Produit p8, Produit p9, Produit p10, Produit p11, Produit p12, Produit p13, Produit p14, Produit p15, Produit p16, Produit p17, Produit p18, Produit p19, Produit p20, Produit p21, Produit p22, Produit p23, Produit p24, Produit p25, Produit p26, Produit p27, Produit p28, Produit p29, Produit p30) {
+void machineDistributrice::newMachine(Produit* p1, Produit* p2, Produit* p3, Produit* p4, Produit* p5, Produit* p6, Produit* p7, Produit* p8, Produit* p9, Produit* p10, Produit* p11, Produit* p12, Produit* p13, Produit* p14, Produit* p15, Produit* p16, Produit* p17, Produit* p18, Produit* p19, Produit* p20, Produit* p21, Produit* p22, Produit* p23, Produit* p24, Produit* p25, Produit* p26, Produit* p27, Produit* p28, Produit* p29, Produit* p30) {
 	
 	vector<Cases> ligne1;
-	ligne1.push_back(Cases(11, p1, 10));
+    ligne1.push_back(Cases(11, p1, 10));
 	ligne1.push_back(Cases(12, p2, 10));
 	ligne1.push_back(Cases(13, p3, 10));
 	ligne1.push_back(Cases(14, p4, 10));
@@ -60,7 +61,47 @@ void machineDistributrice::newMachine(Produit p1, Produit p2, Produit p3, Produi
 	this->_motDePasse = "1234";
 }
 
-void machineDistributrice::addVente(Produit produit)
+void machineDistributrice::addVente(Produit* produit)
 {
 	this->_logVentes.push_back(produit);
+}
+void machineDistributrice::vente(Cases& cases, machineDistributrice& machine, int id)
+{
+    machine.addVente(machine.getProduit(id));
+
+    cases._produits.pop();
+
+
+    ofstream profit("Profit.txt");
+    if (profit.is_open())
+    {
+        profit << ";"; //Avant ou apres ?
+        profit << machine.getProduit(id)->getPrixVente()-machine.getProduit(id)->getPrixAchat();
+    }
+    profit.close();
+
+}
+
+Produit* machineDistributrice::getProduit(int id)
+{
+    for (auto& ligne : _cases) {
+        for (auto& c : ligne) {
+            if (c._id == id) {
+                return c._produit;
+            }
+
+        }
+    }
+    return nullptr;
+}
+int machineDistributrice::getQuantite(int id)
+{
+    for (auto& ligne : _cases) {
+        for (auto& c : ligne) {
+            if (c._id == id) {
+                return c._produits.size();
+            }
+        }
+    }
+    return 0;
 }

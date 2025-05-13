@@ -23,3 +23,4 @@ void Boisson::setEstSansLactose(bool sansLactose)
     _estSansLactose=sansLactose;
 }
 
+
