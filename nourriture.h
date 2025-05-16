@@ -1,7 +1,6 @@
 #ifndef NOURRITURE_H
 #define NOURRITURE_H
 #include "produit.h"
-#include "CSVParser.h"
 
 
 class Nourriture:public Produit

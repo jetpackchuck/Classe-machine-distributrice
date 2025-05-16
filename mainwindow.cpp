@@ -86,7 +86,7 @@ void MainWindow::afficherTousLesProduits()
         QString nomLabelTexte = QString("Code%1").arg(i + 1);
         QLabel* labelTexte = this->findChild<QLabel*>(nomLabelTexte.toUtf8().constData());
 
-        QPixmap pixmap(":/images/boisson1.png");//QString::fromStdString(machine.getProduit(i)->getLien()));
+        QPixmap pixmap(QString::fromStdString(machine.getProduit(i)->getLien()));  //QString::fromStdString(machine.getProduit(i)->getLien()));
         label->setPixmap(pixmap.scaled(label->size(), Qt::KeepAspectRatio));
         int id = i / 5 * 10 + (i % 5 + 1);
         labelTexte->setText(QString("ID: %1\n$%2").arg(id).arg(machine.getProduit(i)->getPrixVente(), 0, 'f', 2));
@@ -113,8 +113,8 @@ void MainWindow::ouvrirProduit(int index, machineDistributrice& machine)
         specialite = b->getEstSansLactose() ? "Le produit est sans lactose" : "Le produit est avec lactose";
     }
 
-    //QString cheminImage = QString::fromStdString(p->getLien());
-    f->afficherProduit(nom, prix/*, cheminImage*/, quantite, specialite);
+    QString cheminImage = QString::fromStdString(p->getLien());
+    f->afficherProduit(nom, prix, cheminImage, quantite, specialite);
     f->exec();
 }
 void MainWindow::setMachine(machineDistributrice& machine) {

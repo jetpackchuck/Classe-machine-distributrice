@@ -13,7 +13,7 @@ class FProduit1 : public QDialog
 
 public:
     explicit FProduit1(QWidget *parent = nullptr);
-    void afficherProduit(const QString& nom, float prix/*, const QString& cheminImage*/, const QString& quantite, const QString& specialite);
+    void afficherProduit(const QString& nom, float prix, const QString& cheminImage, const QString& quantite, const QString& specialite);
     ~FProduit1();
 
 private slots:

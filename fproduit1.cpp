@@ -18,16 +18,16 @@ void FProduit1::on_pushButton_clicked()
 {
     this->close();
 }
-void FProduit1::afficherProduit(const QString& nom, float prix/*, const QString& cheminImage*/, const QString& quantite, const QString& specialite)
+void FProduit1::afficherProduit(const QString& nom, float prix, const QString& cheminImage, const QString& quantite, const QString& specialite)
 {
     ui->labelNom->setText("Nom : " + nom);
     ui->labelPrix->setText("Prix : " + QString::number(prix) + " $");
     ui->labelQuantite->setText("Quantité : " + quantite);
     ui->labelSpecialite->setText(specialite);
 
-    QPixmap image(":/images/boisson1.png");
+    QPixmap image(cheminImage);
 
-        ui->labelImage->setPixmap(image);
-        ui->labelImage->setScaledContents(true);
+    ui->labelImage->setPixmap(image);
+    ui->labelImage->setScaledContents(true);
 
 }

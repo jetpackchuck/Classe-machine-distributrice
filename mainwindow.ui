@@ -6,83 +6,55 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>681</width>
-    <height>620</height>
+    <width>687</width>
+    <height>671</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="autoFillBackground">
-   <bool>false</bool>
-  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="productName_11">
+   <widget class="QPushButton" name="Bouton_5">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>90</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_11">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>20</y>
-      <width>71</width>
-      <height>61</height>
+      <x>540</x>
+      <y>310</y>
+      <width>56</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
+     <string>5</string>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_11">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>90</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_12">
-    <property name="geometry">
-     <rect>
       <x>130</x>
-      <y>90</y>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_55">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>530</y>
       <width>51</width>
       <height>16</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_12">
+   <widget class="QLabel" name="productImage_53">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>20</y>
+      <x>250</x>
+      <y>460</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -94,754 +66,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_12">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>90</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_13">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>90</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_13">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>20</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_13">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>90</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_14">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>90</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_14">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>20</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_14">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>90</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_15">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>90</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_15">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>20</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_15">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>90</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_24">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>190</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_25">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>190</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_23">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>190</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_21">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>190</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_22">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>120</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_23">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>120</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_24">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>120</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_22">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>190</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_21">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>120</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_25">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>120</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_24">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>190</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_23">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>190</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_22">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>190</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_25">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>190</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_21">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>190</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_34">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>290</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_35">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>290</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_33">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>290</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_31">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>290</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_32">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>220</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_33">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>220</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_34">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>220</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_32">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>290</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_31">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>220</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_35">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>220</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_34">
-    <property name="geometry">
-     <rect>
-      <x>310</x>
-      <y>290</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_33">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>290</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_32">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>290</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_35">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>290</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_31">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>290</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_44">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>390</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_45">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>390</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_43">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>390</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_41">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>390</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_42">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>320</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -856,8 +81,8 @@
    <widget class="QLabel" name="productImage_43">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>320</y>
+      <x>250</x>
+      <y>360</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -869,7 +94,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -881,77 +106,34 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_44">
+   <widget class="QLabel" name="estVide_63">
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>320</y>
-      <width>71</width>
-      <height>61</height>
+      <y>630</y>
+      <width>16</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
+     <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="productName_42">
+   <widget class="QLineEdit" name="productName_22">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>390</y>
+      <x>160</x>
+      <y>230</y>
       <width>51</width>
       <height>16</height>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_41">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>320</y>
-      <width>71</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="productImage_45">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>320</y>
+      <x>430</x>
+      <y>360</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -963,7 +145,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -975,11 +157,314 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="productName_44">
+   <widget class="QLineEdit" name="productName_43">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>390</y>
+      <x>250</x>
+      <y>430</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_21">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_31">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>260</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_12">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>130</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_24">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>230</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_51">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>530</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_14">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_32">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>330</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bouton_1">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>270</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_62">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>630</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_23">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>230</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_52">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>530</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_55">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>530</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_44">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>360</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_61">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>630</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_34">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>330</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_54">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>530</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_65">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>630</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_15">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>130</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_14">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>60</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_45">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>430</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_61">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>630</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -988,21 +473,97 @@
    <widget class="QLabel" name="estVide_43">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>390</y>
+      <x>310</x>
+      <y>430</y>
       <width>16</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_11">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>130</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_64">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>560</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_33">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>330</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_63">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>560</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_42">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>390</y>
+      <x>220</x>
+      <y>430</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1011,11 +572,52 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QLabel" name="estVide_45">
+   <widget class="QPushButton" name="Bouton_6">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>390</y>
+      <x>610</x>
+      <y>310</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_13">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>60</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_15">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>130</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1024,11 +626,11 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QLabel" name="estVide_41">
+   <widget class="QLabel" name="estVide_53">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>390</y>
+      <x>310</x>
+      <y>530</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1040,8 +642,8 @@
    <widget class="QLabel" name="estVide_54">
     <property name="geometry">
      <rect>
-      <x>370</x>
-      <y>490</y>
+      <x>400</x>
+      <y>530</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1050,41 +652,11 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="productName_55">
+   <widget class="QLabel" name="productImage_65">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>490</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_53">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>490</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_51">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>490</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="productImage_52">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>420</y>
+      <x>430</x>
+      <y>560</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1096,7 +668,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1108,11 +680,11 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_53">
+   <widget class="QLabel" name="productImage_15">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>420</y>
+      <x>430</x>
+      <y>60</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1124,7 +696,271 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_22">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>230</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_35">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>260</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_12">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>230</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pave</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_64">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>630</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_44">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>430</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_42">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>360</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_63">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>630</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bouton_Annulation_2">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>350</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>❌</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_12">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>60</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bouton_Admin_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>400</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Admin</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_41">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>360</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_45">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>430</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_13">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>130</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_23">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>160</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1139,8 +975,8 @@
    <widget class="QLabel" name="productImage_54">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>420</y>
+      <x>340</x>
+      <y>460</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1152,7 +988,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1162,23 +998,13 @@
     </property>
     <property name="openExternalLinks">
      <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_52">
-    <property name="geometry">
-     <rect>
-      <x>130</x>
-      <y>490</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="productImage_51">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>420</y>
+      <x>70</x>
+      <y>460</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1190,7 +1016,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1202,49 +1028,34 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_55">
+   <widget class="QLineEdit" name="productName_31">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>420</y>
-      <width>71</width>
-      <height>61</height>
+      <x>70</x>
+      <y>330</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bouton_Validation_2">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>350</y>
+      <width>56</width>
+      <height>18</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="textFormat">
-     <enum>Qt::TextFormat::RichText</enum>
-    </property>
-    <property name="pixmap">
-     <pixmap>coke.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-    <property name="openExternalLinks">
-     <bool>true</bool>
+     <string>✅</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="productName_54">
+   <widget class="QLabel" name="estVide_33">
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>490</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_53">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>490</y>
+      <y>330</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1253,93 +1064,24 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QLabel" name="estVide_52">
+   <widget class="QLabel" name="estVide_25">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>490</y>
+      <x>490</x>
+      <y>230</y>
       <width>16</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_55">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>490</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_51">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>490</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_64">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>590</y>
-      <width>16</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_65">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>590</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_63">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>590</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="productName_61">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>590</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
     </property>
    </widget>
    <widget class="QLabel" name="productImage_62">
     <property name="geometry">
      <rect>
-      <x>130</x>
-      <y>520</y>
+      <x>160</x>
+      <y>560</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1351,7 +1093,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1363,11 +1105,44 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_63">
+   <widget class="QPushButton" name="Bouton_4">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>520</y>
+      <x>610</x>
+      <y>290</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_51">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>530</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_21">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>230</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_32">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>260</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1379,7 +1154,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1391,11 +1166,24 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_64">
+   <widget class="QLabel" name="estVide_23">
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>520</y>
+      <y>230</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_25">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>160</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1407,7 +1195,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1419,11 +1207,180 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="productName_62">
+   <widget class="QLabel" name="productImage_52">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>460</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_44">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>430</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_64">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>630</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_22">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>160</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_21">
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>590</y>
+      <y>230</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bouton_2">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>270</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_11">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>60</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bouton_Infos_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>380</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_34">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>330</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_35">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>330</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_42">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>430</y>
       <width>51</width>
       <height>16</height>
      </rect>
@@ -1432,8 +1389,8 @@
    <widget class="QLabel" name="productImage_61">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>520</y>
+      <x>70</x>
+      <y>560</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1445,7 +1402,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1457,11 +1414,11 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_65">
+   <widget class="QLabel" name="productImage_33">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>520</y>
+      <x>250</x>
+      <y>260</y>
       <width>71</width>
       <height>61</height>
      </rect>
@@ -1473,7 +1430,7 @@
      <enum>Qt::TextFormat::RichText</enum>
     </property>
     <property name="pixmap">
-     <pixmap>coke.png</pixmap>
+     <pixmap>../../testQT/coke.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1485,21 +1442,11 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="productName_64">
+   <widget class="QLabel" name="estVide_52">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>590</y>
-      <width>51</width>
-      <height>16</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="estVide_63">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>590</y>
+      <x>220</x>
+      <y>530</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1508,11 +1455,82 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QLabel" name="estVide_62">
+   <widget class="QLineEdit" name="productName_53">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>590</y>
+      <x>250</x>
+      <y>530</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_34">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>260</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Bouton_3">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>290</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_35">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>330</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_41">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>430</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_41">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>430</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1524,8 +1542,8 @@
    <widget class="QLabel" name="estVide_65">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>590</y>
+      <x>490</x>
+      <y>630</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1534,11 +1552,59 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QLabel" name="estVide_61">
+   <widget class="QLineEdit" name="productName_13">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>590</y>
+      <x>250</x>
+      <y>130</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="productName_25">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>230</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="productImage_55">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>460</y>
+      <width>71</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_31">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>330</y>
       <width>16</width>
       <height>16</height>
      </rect>
@@ -1547,147 +1613,78 @@
      <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bouton_4">
+   <widget class="QLabel" name="productImage_24">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>250</y>
-      <width>56</width>
-      <height>18</height>
+      <x>340</x>
+      <y>160</y>
+      <width>71</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="text">
-     <string>4</string>
+     <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::TextFormat::RichText</enum>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../testQT/coke.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bouton_1">
+   <widget class="QLineEdit" name="productName_32">
     <property name="geometry">
      <rect>
-      <x>510</x>
+      <x>160</x>
+      <y>330</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="estVide_24">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
       <y>230</y>
-      <width>56</width>
-      <height>18</height>
+      <width>16</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>1</string>
+     <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bouton_Annulation">
+   <widget class="QLabel" name="estVide_62">
     <property name="geometry">
      <rect>
-      <x>580</x>
-      <y>310</y>
-      <width>56</width>
-      <height>18</height>
+      <x>220</x>
+      <y>630</y>
+      <width>16</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>❌</string>
+     <string>TextLabel</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="Bouton_5">
+   <widget class="QLineEdit" name="productName_14">
     <property name="geometry">
      <rect>
-      <x>510</x>
-      <y>270</y>
-      <width>56</width>
-      <height>18</height>
+      <x>340</x>
+      <y>130</y>
+      <width>51</width>
+      <height>16</height>
      </rect>
-    </property>
-    <property name="text">
-     <string>5</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>190</y>
-      <width>81</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Pave</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Bouton_3">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>250</y>
-      <width>56</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>3</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Bouton_2">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>230</y>
-      <width>56</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>2</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Bouton_6">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>270</y>
-      <width>56</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>6</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Bouton_Validation">
-    <property name="geometry">
-     <rect>
-      <x>510</x>
-      <y>310</y>
-      <width>56</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>✅</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Bouton_Infos">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>340</y>
-      <width>56</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>...</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="Bouton_Admin">
-    <property name="geometry">
-     <rect>
-      <x>550</x>
-      <y>360</y>
-      <width>56</width>
-      <height>18</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Admin</string>
     </property>
    </widget>
   </widget>

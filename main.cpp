@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    QVector<Produit*> produits = chargerProduitsDepuisCSV(":/images/Produits_avec_noms.csv");
+    QVector<Produit*> produits = chargerProduitsDepuisCSV(":/images/images/Produits_avec_noms.csv");
 
     machineDistributrice* machine; //changer en pointeur pour que admin puisse la modifier
 
