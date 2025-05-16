@@ -1,6 +1,6 @@
 
 #include "mainwindow.h"
-#include "./ui_mainwindow.h"
+#include "ui_mainwindow.h"
 #include <QLabel>
 #include <QPushButton>
 #include "produit.h"
@@ -24,6 +24,52 @@ MainWindow::MainWindow(QWidget *parent)
             });
         }
     }
+
+    connect(ui->Bouton_01, &QPushButton::pressed, this, &MainWindow::on_Bouton_01_pressed);
+    connect(ui->Bouton_02, &QPushButton::pressed, this, &MainWindow::on_Bouton_02_pressed);
+    connect(ui->Bouton_03, &QPushButton::pressed, this, &MainWindow::on_Bouton_03_pressed);
+    connect(ui->Bouton_04, &QPushButton::pressed, this, &MainWindow::on_Bouton_04_pressed);
+    connect(ui->Bouton_05, &QPushButton::pressed, this, &MainWindow::on_Bouton_05_pressed);
+    connect(ui->Bouton_06, &QPushButton::pressed, this, &MainWindow::on_Bouton_06_pressed);
+    connect(ui->Bouton_Validation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Validation_2_pressed);
+    connect(ui->Bouton_Annulation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Annulation_2_pressed);
+
+    ui->productName_11->setText(QString::fromStdString(machine.getProduit(11)->getNom())); //met les noms de produits dans les lineedit de chaques cases
+    ui->productName_12->setText(QString::fromStdString(machine.getProduit(12)->getNom()));
+    ui->productName_13->setText(QString::fromStdString(machine.getProduit(13)->getNom()));
+    ui->productName_14->setText(QString::fromStdString(machine.getProduit(14)->getNom()));
+    ui->productName_15->setText(QString::fromStdString(machine.getProduit(15)->getNom()));
+
+    ui->productName_21->setText(QString::fromStdString(machine.getProduit(21)->getNom()));
+    ui->productName_22->setText(QString::fromStdString(machine.getProduit(22)->getNom()));
+    ui->productName_23->setText(QString::fromStdString(machine.getProduit(23)->getNom()));
+    ui->productName_24->setText(QString::fromStdString(machine.getProduit(24)->getNom()));
+    ui->productName_25->setText(QString::fromStdString(machine.getProduit(25)->getNom()));
+
+    ui->productName_31->setText(QString::fromStdString(machine.getProduit(31)->getNom()));
+    ui->productName_32->setText(QString::fromStdString(machine.getProduit(32)->getNom()));
+    ui->productName_33->setText(QString::fromStdString(machine.getProduit(33)->getNom()));
+    ui->productName_34->setText(QString::fromStdString(machine.getProduit(34)->getNom()));
+    ui->productName_35->setText(QString::fromStdString(machine.getProduit(35)->getNom()));
+
+    ui->productName_41->setText(QString::fromStdString(machine.getProduit(41)->getNom()));
+    ui->productName_42->setText(QString::fromStdString(machine.getProduit(42)->getNom()));
+    ui->productName_43->setText(QString::fromStdString(machine.getProduit(43)->getNom()));
+    ui->productName_44->setText(QString::fromStdString(machine.getProduit(44)->getNom()));
+    ui->productName_45->setText(QString::fromStdString(machine.getProduit(45)->getNom()));
+
+    ui->productName_51->setText(QString::fromStdString(machine.getProduit(51)->getNom()));
+    ui->productName_52->setText(QString::fromStdString(machine.getProduit(52)->getNom()));
+    ui->productName_53->setText(QString::fromStdString(machine.getProduit(53)->getNom()));
+    ui->productName_54->setText(QString::fromStdString(machine.getProduit(54)->getNom()));
+    ui->productName_55->setText(QString::fromStdString(machine.getProduit(55)->getNom()));
+
+    ui->productName_61->setText(QString::fromStdString(machine.getProduit(61)->getNom()));
+    ui->productName_62->setText(QString::fromStdString(machine.getProduit(62)->getNom()));
+    ui->productName_63->setText(QString::fromStdString(machine.getProduit(63)->getNom()));
+    ui->productName_64->setText(QString::fromStdString(machine.getProduit(64)->getNom()));
+    ui->productName_65->setText(QString::fromStdString(machine.getProduit(65)->getNom()));
+
 }
 
 MainWindow::~MainWindow() {
@@ -73,3 +119,104 @@ void MainWindow::ouvrirProduit(int index, machineDistributrice& machine)
 void MainWindow::setMachine(const machineDistributrice& machine) {
     this->machine = machine;
 }
+
+void MainWindow::on_Bouton_01_pressed()
+{
+    _choix +="1";
+    if (_choix.size() <= 2)
+    {
+
+        ui->label_2->setText(QString::fromStdString(_choix));
+    }
+}
+
+
+void MainWindow::on_Bouton_02_pressed()
+{
+    _choix +="2";
+    if (_choix.size() <= 2)
+    {
+
+        ui->label_2->setText(QString::fromStdString(_choix));
+    }
+}
+
+
+void MainWindow::on_Bouton_03_pressed()
+{
+    _choix +="3";
+    if (_choix.size() <= 2)
+    {
+
+        ui->label_2->setText(QString::fromStdString(_choix));
+    }
+}
+
+
+void MainWindow::on_Bouton_04_pressed()
+{
+    _choix +="4";
+    if (_choix.size() <= 2)
+    {
+
+        ui->label_2->setText(QString::fromStdString(_choix));
+    }
+}
+
+
+void MainWindow::on_Bouton_05_pressed()
+{
+    _choix +="5";
+    if (_choix.size() <= 2)
+    {
+
+        ui->label_2->setText(QString::fromStdString(_choix));
+    }
+}
+
+
+void MainWindow::on_Bouton_06_pressed()
+{
+    _choix +="6";
+    if (_choix.size() <= 2)
+    {
+
+        ui->label_2->setText(QString::fromStdString(_choix));
+    }
+}
+
+
+
+
+void MainWindow::on_Bouton_Validation_2_pressed()
+{
+    if(_choix == ""){
+
+    }
+    else{
+        if(_choix.size()>2){
+            _choix.resize(2);
+        }
+        if(_choix.size()==2 && _choix[1]!='6')
+        {
+            ui->label_2->setText("Choix validé");
+            machine.vente(machine, stoi(_choix));
+            if(machine.getQuantite(stoi(_choix)) == 0)
+            {
+                ui->
+            }
+        }
+        else{
+            ui->label_2->setText("X");
+            _choix = "";
+        }
+    }
+}
+
+
+void MainWindow::on_Bouton_Annulation_2_pressed()
+{
+    _choix = "";
+    ui->label_2->setText(QString::fromStdString(_choix));
+}
+

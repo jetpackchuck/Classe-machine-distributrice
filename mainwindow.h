@@ -25,9 +25,25 @@ public:
     }
     void ouvrirProduit(int index, machineDistributrice& machine);
     void setMachine(const machineDistributrice& machine);
+    std::string _choix;
 
 private slots:
 
+    void on_Bouton_01_pressed();
+
+    void on_Bouton_02_pressed();
+
+    void on_Bouton_03_pressed();
+
+    void on_Bouton_04_pressed();
+
+    void on_Bouton_05_pressed();
+
+    void on_Bouton_06_pressed();
+
+    void on_Bouton_Validation_2_pressed();
+
+    void on_Bouton_Annulation_2_pressed();
 
 private:
     machineDistributrice machine;

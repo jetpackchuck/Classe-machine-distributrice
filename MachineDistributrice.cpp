@@ -65,11 +65,13 @@ void machineDistributrice::addVente(Produit* produit)
 {
 	this->_logVentes.push_back(produit);
 }
-void machineDistributrice::vente(Cases& cases, machineDistributrice& machine, int id)
+void machineDistributrice::vente(/*Cases& cases,*/ machineDistributrice& machine, int id)
 {
+    int firstNum = id / 10;
+    int secondNum = id % 10;
     machine.addVente(machine.getProduit(id));
 
-    cases._produits.pop();
+    machine._cases[firstNum][secondNum]._produits.pop();
 
 
     ofstream profit("Profit.txt");
