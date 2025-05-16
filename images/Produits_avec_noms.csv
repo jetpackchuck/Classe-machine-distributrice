@@ -1,0 +1,31 @@
+Nom,Type,PrixAchat,PrixVente,Quantite,Specialite,LienImage
+Coca,boisson,0.6,1.2,260,avec lactose,:/images/images/boisson1.png
+Eau Minérale,boisson,0.7,1.4,270,sans lactose,:/images/images/boisson2.png
+Limonade,boisson,0.8,1.6,280,avec lactose,:/images/images/boisson3.png
+Thé Glacé,boisson,0.9,1.8,290,sans lactose,:/images/images/boisson4.png
+Jus d’Orange,boisson,1.0,2.0,300,avec lactose,:/images/images/boisson5.png
+Jus de Pomme,boisson,1.1,2.2,310,sans lactose,:/images/images/boisson6.png
+Soda Citron,boisson,1.2,2.4,320,avec lactose,:/images/images/boisson7.png
+Energy Boost,boisson,1.3,2.6,330,sans lactose,:/images/images/boisson8.png
+Café Froid,boisson,1.4,2.8,340,avec lactose,:/images/images/boisson9.png
+Smoothie Fraise,boisson,1.5,3.0,350,sans lactose,:/images/images/boisson10.png
+Ice Tea Pêche,boisson,1.6,3.2,360,avec lactose,:/images/images/boisson11.png
+Boisson Électrolyte,boisson,1.7,3.4,370,sans lactose,:/images/images/boisson12.png
+Lait Chocolaté,boisson,1.8,3.6,380,avec lactose,:/images/images/boisson13.png
+Eau Pétillante,boisson,1.9,3.8,390,sans lactose,:/images/images/boisson14.png
+Kombucha,boisson,2.0,4.0,400,avec lactose,:/images/images/boisson15.png
+Chips Sel,nourriture,0.55,1.15,115,non-végétarien,:/images/images/nourriture1.png
+Barre Énergie,nourriture,0.7,1.4,130,végétarien,:/images/images/nourriture2.png
+Sandwich Poulet,nourriture,0.85,1.65,145,non-végétarien,:/images/images/nourriture3.png
+Croissant,nourriture,1.0,1.9,160,végétarien,:/images/images/nourriture4.png
+Muffin Bleuets,nourriture,1.15,2.15,175,non-végétarien,:/images/images/nourriture5.png
+Barre Céréales,nourriture,1.3,2.4,190,végétarien,:/images/images/nourriture6.png
+Salade César,nourriture,1.45,2.65,205,non-végétarien,:/images/images/nourriture7.png
+Yogourt Nature,nourriture,1.6,2.9,220,végétarien,:/images/images/nourriture8.png
+Pomme,nourriture,1.75,3.15,235,non-végétarien,:/images/images/nourriture9.png
+Wrap Végé,nourriture,1.9,3.4,250,végétarien,:/images/images/nourriture10.png
+Sandwich Jambon,nourriture,2.05,3.65,265,non-végétarien,:/images/images/nourriture11.png
+Fromage en Cube,nourriture,2.2,3.9,280,végétarien,:/images/images/nourriture12.png
+Biscuit Chocolat,nourriture,2.35,4.15,295,non-végétarien,:/images/images/nourriture13.png
+Nouilles Instant,nourriture,2.5,4.4,310,végétarien,:/images/images/nourriture14.png
+Soupe Tomate,nourriture,2.65,4.65,325,non-végétarien,:/images/images/nourriture15.png
