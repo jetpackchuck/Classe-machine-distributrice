@@ -14,7 +14,7 @@ public:
     Produit* _produit;
     std::stack<Produit*> _produits;
     Cases(int id, Produit* produit, int capacite=10);
-	void refill(Produit produit, int quantite);
+    void refill(int quantite);
 
 	bool estVide();
 };

@@ -15,7 +15,7 @@ Cases::Cases(int id, Produit* produit, int capacite)
 	}
 }
 
-void Cases::refill(Produit produit, int quantite)
+void Cases::refill(int quantite)
 {
 	for (size_t i = 0; i < quantite; i++)
 	{

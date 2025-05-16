@@ -11,6 +11,7 @@
 #include <QTextStream>
 #include <QStringList>
 #include <QDebug>
+#include "admin.h"
 
 QVector<Produit*> chargerProduitsDepuisCSV(const QString& chemin) {
     QVector<Produit*> produits;
@@ -76,10 +77,10 @@ int main(int argc, char *argv[])
 
     QVector<Produit*> produits = chargerProduitsDepuisCSV(":/images/Produits_avec_noms.csv");
 
-    machineDistributrice machine;
+    machineDistributrice* machine; //changer en pointeur pour que admin puisse la modifier
 
     if (produits.size() >= 30) {
-        machine.newMachine(
+        machine->newMachine(
             produits[0], produits[1], produits[2], produits[3], produits[4],
             produits[5], produits[6], produits[7], produits[8], produits[9],
             produits[10], produits[11], produits[12], produits[13], produits[14],
@@ -90,7 +91,8 @@ int main(int argc, char *argv[])
     }
 
     MainWindow w;
-    w.setMachine(machine);
+    Admin* admin = new Admin(machine);
+    w.setMachine(*machine); //passage de la machine par pointeur et non referene (pose probleme ??)
     w.show();
 
     return a.exec();

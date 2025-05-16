@@ -24,7 +24,7 @@ public:
         this->produits = liste;
     }
     void ouvrirProduit(int index, machineDistributrice& machine);
-    void setMachine(const machineDistributrice& machine);
+    void setMachine(machineDistributrice& machine);
     std::string _choix;
 
 private slots:

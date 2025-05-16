@@ -107,3 +107,32 @@ int machineDistributrice::getQuantite(int id)
     }
     return 0;
 }
+
+void machineDistributrice::setMotDePasse(std::string newPW)
+{
+    this->_motDePasse = newPW;
+}
+
+Cases machineDistributrice::getCase(int id)
+{
+    for (auto& ligne : _cases) {
+        for (auto& c : ligne) {
+            if (c._id == id) {
+                return c;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

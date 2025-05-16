@@ -4,9 +4,8 @@
 #include <QLabel>
 #include <QPushButton>
 #include "produit.h"
-#include "nourriture.h"
-#include "boisson.h"
-#include "fproduit1.h"
+//#include "nourriture.h"
+//#include "boisson.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -116,7 +115,7 @@ void MainWindow::ouvrirProduit(int index, machineDistributrice& machine)
     f->afficherProduit(nom, prix/*, cheminImage*/, quantite, specialite);
     f->exec();
 }
-void MainWindow::setMachine(const machineDistributrice& machine) {
+void MainWindow::setMachine(machineDistributrice& machine) {
     this->machine = machine;
 }
 
