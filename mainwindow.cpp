@@ -1,11 +1,13 @@
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QLabel>
 #include <QPushButton>
 #include "produit.h"
-//#include "nourriture.h"
-//#include "boisson.h"
+#include "boisson.h"
+#include "fproduit1.h"
+#include "nourriture.h"
+
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -24,12 +26,12 @@ MainWindow::MainWindow(QWidget *parent)
         }
     }
 
-    connect(ui->Bouton_01, &QPushButton::pressed, this, &MainWindow::on_Bouton_01_pressed);
-    connect(ui->Bouton_02, &QPushButton::pressed, this, &MainWindow::on_Bouton_02_pressed);
-    connect(ui->Bouton_03, &QPushButton::pressed, this, &MainWindow::on_Bouton_03_pressed);
-    connect(ui->Bouton_04, &QPushButton::pressed, this, &MainWindow::on_Bouton_04_pressed);
-    connect(ui->Bouton_05, &QPushButton::pressed, this, &MainWindow::on_Bouton_05_pressed);
-    connect(ui->Bouton_06, &QPushButton::pressed, this, &MainWindow::on_Bouton_06_pressed);
+    connect(ui->Bouton_1, &QPushButton::pressed, this, &MainWindow::on_Bouton_1_pressed);
+    connect(ui->Bouton_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_2_pressed);
+    connect(ui->Bouton_3, &QPushButton::pressed, this, &MainWindow::on_Bouton_3_pressed);
+    connect(ui->Bouton_4, &QPushButton::pressed, this, &MainWindow::on_Bouton_4_pressed);
+    connect(ui->Bouton_5, &QPushButton::pressed, this, &MainWindow::on_Bouton_5_pressed);
+    connect(ui->Bouton_6, &QPushButton::pressed, this, &MainWindow::on_Bouton_6_pressed);
     connect(ui->Bouton_Validation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Validation_2_pressed);
     connect(ui->Bouton_Annulation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Annulation_2_pressed);
 
@@ -119,7 +121,7 @@ void MainWindow::setMachine(machineDistributrice& machine) {
     this->machine = machine;
 }
 
-void MainWindow::on_Bouton_01_pressed()
+void MainWindow::on_Bouton_1_pressed()
 {
     _choix +="1";
     if (_choix.size() <= 2)
@@ -130,7 +132,7 @@ void MainWindow::on_Bouton_01_pressed()
 }
 
 
-void MainWindow::on_Bouton_02_pressed()
+void MainWindow::on_Bouton_2_pressed()
 {
     _choix +="2";
     if (_choix.size() <= 2)
@@ -141,18 +143,17 @@ void MainWindow::on_Bouton_02_pressed()
 }
 
 
-void MainWindow::on_Bouton_03_pressed()
+void MainWindow::on_Bouton_3_pressed()
 {
     _choix +="3";
     if (_choix.size() <= 2)
     {
-
         ui->label_2->setText(QString::fromStdString(_choix));
     }
 }
 
 
-void MainWindow::on_Bouton_04_pressed()
+void MainWindow::on_Bouton_4_pressed()
 {
     _choix +="4";
     if (_choix.size() <= 2)
@@ -163,7 +164,7 @@ void MainWindow::on_Bouton_04_pressed()
 }
 
 
-void MainWindow::on_Bouton_05_pressed()
+void MainWindow::on_Bouton_5_pressed()
 {
     _choix +="5";
     if (_choix.size() <= 2)
@@ -174,7 +175,7 @@ void MainWindow::on_Bouton_05_pressed()
 }
 
 
-void MainWindow::on_Bouton_06_pressed()
+void MainWindow::on_Bouton_6_pressed()
 {
     _choix +="6";
     if (_choix.size() <= 2)
@@ -202,7 +203,7 @@ void MainWindow::on_Bouton_Validation_2_pressed()
             machine.vente(machine, stoi(_choix));
             if(machine.getQuantite(stoi(_choix)) == 0)
             {
-                ui->
+                ui->label_2->setText(QString::fromStdString(_choix));
             }
         }
         else{
@@ -218,4 +219,7 @@ void MainWindow::on_Bouton_Annulation_2_pressed()
     _choix = "";
     ui->label_2->setText(QString::fromStdString(_choix));
 }
+
+
+
 

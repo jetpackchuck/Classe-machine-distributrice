@@ -13,7 +13,7 @@ private:
     std::vector<std::vector<std::string>> _data;
     std::vector<std::string> _columnNames;
 public:
-    CSVParser(char delimiter=',', bool readColumnNames = true);
+    CSVParser(char delimiter=';', bool readColumnNames = true);
 
     char getDelimiter() const;
     void setDelimiter(char delimiter);

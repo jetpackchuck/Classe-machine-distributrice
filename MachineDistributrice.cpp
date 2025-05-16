@@ -1,4 +1,5 @@
 #include <iostream>
+#include <map>
 #include <vector>
 #include <fstream>
 #include "MachineDistributrice.h"
@@ -55,8 +56,6 @@ void machineDistributrice::newMachine(Produit* p1, Produit* p2, Produit* p3, Pro
 	this->_cases.push_back(ligne4);
 	this->_cases.push_back(ligne5);
 	this->_cases.push_back(ligne6);
-
-	map<Produit, float> prixProduits;
 
 	this->_motDePasse = "1234";
 }

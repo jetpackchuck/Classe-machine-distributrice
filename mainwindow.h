@@ -29,17 +29,17 @@ public:
 
 private slots:
 
-    void on_Bouton_01_pressed();
+    void on_Bouton_1_pressed();
 
-    void on_Bouton_02_pressed();
+    void on_Bouton_2_pressed();
 
-    void on_Bouton_03_pressed();
+    void on_Bouton_3_pressed();
 
-    void on_Bouton_04_pressed();
+    void on_Bouton_4_pressed();
 
-    void on_Bouton_05_pressed();
+    void on_Bouton_5_pressed();
 
-    void on_Bouton_06_pressed();
+    void on_Bouton_6_pressed();
 
     void on_Bouton_Validation_2_pressed();
 

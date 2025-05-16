@@ -1,8 +1,6 @@
 #pragma once
-#include <iostream>
 #include <vector>
 #include <list>
-#include <map>
 #include "Cases.h"
 
 class machineDistributrice

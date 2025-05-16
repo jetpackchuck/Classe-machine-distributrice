@@ -1,12 +1,9 @@
 #include <QApplication>
 #include "mainwindow.h"
-#include "CSVParser.h"
 #include "nourriture.h"
 #include "boisson.h"
 #include "produit.h"
 #include <QVector>
-#include <fstream>
-#include <sstream>
 #include <QFile>
 #include <QTextStream>
 #include <QStringList>
