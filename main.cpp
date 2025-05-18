@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
 
     QVector<Produit*> produits = chargerProduitsDepuisCSV(":/images/images/Produits_avec_noms.csv");
 
-    machineDistributrice* machine; //changer en pointeur pour que admin puisse la modifier
+    machineDistributrice* machine = new machineDistributrice();
 
     if (produits.size() >= 30) {
         machine->newMachine(
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
 
     MainWindow w;
     Admin* admin = new Admin(machine);
-    w.setMachine(*machine); //passage de la machine par pointeur et non referene (pose probleme ??)
+    w.setMachine(machine);
     w.show();
 
     return a.exec();

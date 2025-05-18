@@ -64,20 +64,20 @@ void machineDistributrice::addVente(Produit* produit)
 {
 	this->_logVentes.push_back(produit);
 }
-void machineDistributrice::vente(/*Cases& cases,*/ machineDistributrice& machine, int id)
+void machineDistributrice::vente(/*Cases& cases,*/ machineDistributrice* machine, int id)
 {
     int firstNum = id / 10;
     int secondNum = id % 10;
-    machine.addVente(machine.getProduit(id));
+    machine->addVente(machine->getProduit(id));
 
-    machine._cases[firstNum][secondNum]._produits.pop();
+    machine->_cases[firstNum][secondNum]._produits.pop();
 
 
     ofstream profit("Profit.txt");
     if (profit.is_open())
     {
         profit << ";"; //Avant ou apres ?
-        profit << machine.getProduit(id)->getPrixVente()-machine.getProduit(id)->getPrixAchat();
+        profit << machine->getProduit(id)->getPrixVente()-machine->getProduit(id)->getPrixAchat();
     }
     profit.close();
 

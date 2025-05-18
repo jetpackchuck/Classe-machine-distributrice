@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_55">
@@ -50,7 +50,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_53">
+   <widget class="QLabel" name="Produit23">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -78,7 +78,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_43">
+   <widget class="QLabel" name="Produit18">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -116,7 +116,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_22">
@@ -129,7 +129,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_45">
+   <widget class="QLabel" name="Produit20">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -167,7 +167,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_21">
+   <widget class="QLabel" name="Produit6">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -195,7 +195,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_31">
+   <widget class="QLabel" name="Produit11">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -253,7 +253,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_14">
@@ -266,7 +266,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_32">
@@ -279,7 +279,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="Bouton_1">
@@ -335,10 +335,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_44">
+   <widget class="QLabel" name="Produit19">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -376,7 +376,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_34">
@@ -389,7 +389,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_54">
@@ -422,7 +422,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_14">
+   <widget class="QLabel" name="Produit4">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -480,7 +480,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_11">
@@ -493,7 +493,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_64">
+   <widget class="QLabel" name="Produit29">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -531,7 +531,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_63">
+   <widget class="QLabel" name="Produit28">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -569,7 +569,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="Bouton_6">
@@ -585,7 +585,7 @@
      <string>6</string>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_13">
+   <widget class="QLabel" name="Produit3">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -623,7 +623,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_53">
@@ -636,7 +636,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_54">
@@ -649,10 +649,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_65">
+   <widget class="QLabel" name="Produit30">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -680,7 +680,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_15">
+   <widget class="QLabel" name="Produit5">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -718,10 +718,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_35">
+   <widget class="QLabel" name="Produit15">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -759,7 +759,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -785,7 +785,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_44">
@@ -798,7 +798,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_42">
+   <widget class="QLabel" name="Produit17">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -849,7 +849,7 @@
      <string>❌</string>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_12">
+   <widget class="QLabel" name="Produit2">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -890,7 +890,7 @@
      <string>Admin</string>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_41">
+   <widget class="QLabel" name="Produit16">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -928,7 +928,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_13">
@@ -941,10 +941,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_23">
+   <widget class="QLabel" name="Produit8">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -972,7 +972,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_54">
+   <widget class="QLabel" name="Produit24">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -1000,7 +1000,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_51">
+   <widget class="QLabel" name="Produit21">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1061,7 +1061,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_25">
@@ -1074,10 +1074,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_62">
+   <widget class="QLabel" name="Produit27">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -1138,7 +1138,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_32">
+   <widget class="QLabel" name="Produit12">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -1176,10 +1176,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_25">
+   <widget class="QLabel" name="Produit10">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -1207,7 +1207,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_52">
+   <widget class="QLabel" name="Produit22">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -1245,7 +1245,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_64">
@@ -1258,7 +1258,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_22">
+   <widget class="QLabel" name="Produit7">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -1296,7 +1296,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QPushButton" name="Bouton_2">
@@ -1312,7 +1312,7 @@
      <string>2</string>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_11">
+   <widget class="QLabel" name="Produit1">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1373,7 +1373,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_42">
@@ -1386,7 +1386,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_61">
+   <widget class="QLabel" name="Produit26">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -1414,7 +1414,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_33">
+   <widget class="QLabel" name="Produit13">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -1452,7 +1452,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_53">
@@ -1465,7 +1465,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_34">
+   <widget class="QLabel" name="Produit14">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -1536,7 +1536,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_65">
@@ -1549,7 +1549,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_13">
@@ -1572,7 +1572,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_55">
+   <widget class="QLabel" name="Produit25">
     <property name="geometry">
      <rect>
       <x>430</x>
@@ -1610,10 +1610,10 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="productImage_24">
+   <widget class="QLabel" name="Produit9">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -1661,7 +1661,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="estVide_62">
@@ -1674,7 +1674,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="productName_14">

@@ -14,7 +14,7 @@ public:
 	void getProfit();
     void setMotDePasse(std::string newPW);
     void addVente(Produit* produit);
-    void vente(/*Cases& cases,*/ machineDistributrice& machine, int id);
+    void vente(/*Cases& cases,*/ machineDistributrice* machine, int id);
     Produit* getProduit(int id) ;
     int getQuantite(int id);
     Cases getCase(int id);
