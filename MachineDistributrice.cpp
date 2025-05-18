@@ -107,6 +107,11 @@ int machineDistributrice::getQuantite(int id)
     return 0;
 }
 
+string machineDistributrice::getMotDePasse()
+{
+    return _motDePasse;
+}
+
 void machineDistributrice::setMotDePasse(std::string newPW)
 {
     this->_motDePasse = newPW;

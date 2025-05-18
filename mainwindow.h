@@ -23,7 +23,7 @@ public:
     void setProduits(const QVector<Produit*>& liste) {
         this->produits = liste;
     }
-    void ouvrirProduit(int index, machineDistributrice* machine);
+
     void setMachine(machineDistributrice* machine);
     std::string _choix;
 
@@ -44,6 +44,10 @@ private slots:
     void on_Bouton_Validation_2_pressed();
 
     void on_Bouton_Annulation_2_pressed();
+
+    void on_Bouton_Infos_2_clicked();
+
+    void on_Bouton_Admin_2_clicked();
 
 private:
     machineDistributrice* machine;

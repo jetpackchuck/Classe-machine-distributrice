@@ -17,5 +17,6 @@ public:
     void vente(/*Cases& cases,*/ machineDistributrice* machine, int id);
     Produit* getProduit(int id) ;
     int getQuantite(int id);
+    std::string getMotDePasse();
     Cases getCase(int id);
 };

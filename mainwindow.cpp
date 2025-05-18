@@ -6,6 +6,9 @@
 #include "boisson.h"
 #include "fproduit1.h"
 #include "nourriture.h"
+#include "admin.h"
+#include <QInputDialog>
+#include <QMessageBox>
 
 
 
@@ -42,43 +45,12 @@ void MainWindow::afficherTousLesProduits()
     }
 }
 
-void MainWindow::ouvrirProduit(int index, machineDistributrice* machine)
-{
-    Produit* p = machine->getProduit(index);
-    FProduit1* f = new FProduit1(this);
 
-    QString nom = QString::fromStdString(p->getNom());
-    float prix = p->getPrixVente();
-    QString quantite;
-    QString specialite;
-
-    if (p->getType() == "nourriture") {
-        Nourriture* n = static_cast<Nourriture*>(p);
-        quantite = QString::number(n->getPoids()) + " kg";
-        specialite = n->getEstVege() ? "Le produit est végétarien" : "Le produit est non-végétarien";
-    } else {
-        Boisson* b = static_cast<Boisson*>(p);
-        quantite = QString::number(b->getVolume()) + " ml";
-        specialite = b->getEstSansLactose() ? "Le produit est sans lactose" : "Le produit est avec lactose";
-    }
-
-    QString cheminImage = QString::fromStdString(p->getLien());
-    f->afficherProduit(nom, prix, cheminImage, quantite, specialite);
-    f->exec();
-}
 void MainWindow::setMachine(machineDistributrice* machine) {
     this->machine = machine;
     afficherTousLesProduits();
 
-    for (int id = 11; id <= 65; ++id) {
-        QString nomBouton = QString("pushButton%1").arg(id);
-        QPushButton* bouton = this->findChild<QPushButton*>(nomBouton);
-        if (bouton) {
-            connect(bouton, &QPushButton::clicked, this, [=]() {
-                this->ouvrirProduit(id, machine);
-            });
-        }
-    }
+
 
     connect(ui->Bouton_1, &QPushButton::pressed, this, &MainWindow::on_Bouton_1_pressed);
     connect(ui->Bouton_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_2_pressed);
@@ -228,4 +200,28 @@ void MainWindow::on_Bouton_Annulation_2_pressed()
 
 
 
+
+
+void MainWindow::on_Bouton_Infos_2_clicked()
+{
+    FProduit1* f = new FProduit1(this);
+    f->demanderProduit(machine);
+
+}
+
+
+void MainWindow::on_Bouton_Admin_2_clicked()
+{
+    bool ok;
+    QString mdp = QInputDialog::getText(this, "Accès Admin", "Entrez le mot de passe :", QLineEdit::Password, "", &ok);
+
+    if (ok) {
+        if (machine->getMotDePasse() == mdp.toStdString()) {
+            Admin* adminWindow = new Admin(machine, this);
+            adminWindow->exec();
+        } else {
+            QMessageBox::warning(this, "Erreur", "Mot de passe incorrect.");
+        }
+    }
+}
 
