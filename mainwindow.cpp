@@ -42,6 +42,7 @@ void MainWindow::afficherTousLesProduits()
         label->setPixmap(pixmap.scaled(label->size(), Qt::KeepAspectRatio));
 
 
+
     }
 }
 
@@ -52,14 +53,14 @@ void MainWindow::setMachine(machineDistributrice* machine) {
 
 
 
-    connect(ui->Bouton_1, &QPushButton::pressed, this, &MainWindow::on_Bouton_1_pressed);
+   /* connect(ui->Bouton_1, &QPushButton::pressed, this, &MainWindow::on_Bouton_1_pressed);
     connect(ui->Bouton_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_2_pressed);
     connect(ui->Bouton_3, &QPushButton::pressed, this, &MainWindow::on_Bouton_3_pressed);
     connect(ui->Bouton_4, &QPushButton::pressed, this, &MainWindow::on_Bouton_4_pressed);
     connect(ui->Bouton_5, &QPushButton::pressed, this, &MainWindow::on_Bouton_5_pressed);
     connect(ui->Bouton_6, &QPushButton::pressed, this, &MainWindow::on_Bouton_6_pressed);
     connect(ui->Bouton_Validation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Validation_2_pressed);
-    connect(ui->Bouton_Annulation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Annulation_2_pressed);
+    connect(ui->Bouton_Annulation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Annulation_2_pressed);*/
 
     ui->productName_11->setText(QString::fromStdString(machine->getProduit(11)->getNom())+ QString(" 11"));
     ui->productName_12->setText(QString::fromStdString(machine->getProduit(12)->getNom())+ QString(" 12"));
@@ -97,6 +98,9 @@ void MainWindow::setMachine(machineDistributrice* machine) {
     ui->productName_64->setText(QString::fromStdString(machine->getProduit(64)->getNom())+ QString(" 64"));
     ui->productName_65->setText(QString::fromStdString(machine->getProduit(65)->getNom())+ QString(" 65"));
 
+
+    ui->label_2->setText("");
+
 }
 
 void MainWindow::on_Bouton_1_pressed()
@@ -106,6 +110,10 @@ void MainWindow::on_Bouton_1_pressed()
     {
 
         ui->label_2->setText(QString::fromStdString(_choix));
+    }
+    else{
+        ui->label_2->setText("ID trop grand");
+        _choix +="";
     }
 }
 
@@ -118,6 +126,10 @@ void MainWindow::on_Bouton_2_pressed()
 
         ui->label_2->setText(QString::fromStdString(_choix));
     }
+    else{
+        ui->label_2->setText("ID trop grand");
+        _choix +="";
+    }
 }
 
 
@@ -127,6 +139,10 @@ void MainWindow::on_Bouton_3_pressed()
     if (_choix.size() <= 2)
     {
         ui->label_2->setText(QString::fromStdString(_choix));
+    }
+    else{
+        ui->label_2->setText("ID trop grand");
+        _choix +="";
     }
 }
 
@@ -139,6 +155,10 @@ void MainWindow::on_Bouton_4_pressed()
 
         ui->label_2->setText(QString::fromStdString(_choix));
     }
+    else{
+        ui->label_2->setText("ID trop grand");
+        _choix +="";
+    }
 }
 
 
@@ -149,6 +169,10 @@ void MainWindow::on_Bouton_5_pressed()
     {
 
         ui->label_2->setText(QString::fromStdString(_choix));
+    }
+    else{
+        ui->label_2->setText("ID trop grand");
+        _choix +="";
     }
 }
 
@@ -161,6 +185,10 @@ void MainWindow::on_Bouton_6_pressed()
 
         ui->label_2->setText(QString::fromStdString(_choix));
     }
+    else{
+        ui->label_2->setText("ID trop grand");
+        _choix +="";
+    }
 }
 
 
@@ -169,20 +197,21 @@ void MainWindow::on_Bouton_6_pressed()
 void MainWindow::on_Bouton_Validation_2_pressed()
 {
     if(_choix == ""){
-
+ui->label_2->setText("Choix invalide");
     }
     else{
-        if(_choix.size()>2){
-            _choix.resize(2);
-        }
         if(_choix.size()==2 && _choix[1]!='6')
         {
             ui->label_2->setText("Choix validé");
-            machine->vente(machine, stoi(_choix));
+            machine->vente(/*machine,*/ stoi(_choix));
             if(machine->getQuantite(stoi(_choix)) == 0)
             {
-                ui->label_2->setText(QString::fromStdString(_choix));
+                QLabel* label = this->findChild<QLabel*>(QString("estVide_%1").arg(QString::fromStdString(_choix)));
+                if (label) {
+                    label->setText("X");
+                }
             }
+            _choix = "";
         }
         else{
             ui->label_2->setText("X");

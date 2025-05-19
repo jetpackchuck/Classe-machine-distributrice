@@ -8,11 +8,12 @@ Cases::Cases(int id, Produit* produit, int capacite)
 {
 	this->_id = id;
     this->_produit=produit;
-	
+
     for (size_t i = 0; i < capacite; i++)
-	{
+    {
         this->_produits.push(this->_produit);
-	}
+
+    }
 }
 
 void Cases::refill(int quantite)

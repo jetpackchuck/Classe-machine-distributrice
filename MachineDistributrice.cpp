@@ -3,6 +3,7 @@
 #include <vector>
 #include <fstream>
 #include "MachineDistributrice.h"
+#include <QDebug>
 
 using namespace std;
 
@@ -64,20 +65,21 @@ void machineDistributrice::addVente(Produit* produit)
 {
 	this->_logVentes.push_back(produit);
 }
-void machineDistributrice::vente(/*Cases& cases,*/ machineDistributrice* machine, int id)
+void machineDistributrice::vente( int id)
 {
     int firstNum = id / 10;
     int secondNum = id % 10;
-    machine->addVente(machine->getProduit(id));
+    this->addVente(this->getProduit(id));
 
-    machine->_cases[firstNum][secondNum]._produits.pop();
+    this->_cases[firstNum][secondNum]._produits.pop();
 
 
-    ofstream profit("Profit.txt");
+
+    ofstream profit("Profit.txt",ios::app);
     if (profit.is_open())
     {
         profit << ";"; //Avant ou apres ?
-        profit << machine->getProduit(id)->getPrixVente()-machine->getProduit(id)->getPrixAchat();
+        profit << this->getProduit(id)->getPrixVente()-this->getProduit(id)->getPrixAchat();
     }
     profit.close();
 
@@ -97,14 +99,9 @@ Produit* machineDistributrice::getProduit(int id)
 }
 int machineDistributrice::getQuantite(int id)
 {
-    for (auto& ligne : _cases) {
-        for (auto& c : ligne) {
-            if (c._id == id) {
-                return c._produits.size();
-            }
-        }
-    }
-    return 0;
+    int firstNum = id / 10;
+    int secondNum = id % 10;
+    return _cases[firstNum][secondNum]._produits.size();
 }
 
 string machineDistributrice::getMotDePasse()
