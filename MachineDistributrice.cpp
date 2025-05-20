@@ -50,12 +50,15 @@ void machineDistributrice::newMachine(Produit* p1, Produit* p2, Produit* p3, Pro
 	ligne6.push_back(Cases(64, p29, 10));
 	ligne6.push_back(Cases(65, p30, 10));
 
-	this->_cases.push_back(ligne1);
-	this->_cases.push_back(ligne2);
-	this->_cases.push_back(ligne3);
-	this->_cases.push_back(ligne4);
-	this->_cases.push_back(ligne5);
-	this->_cases.push_back(ligne6);
+
+    this->_cases.resize(7); // Crée les index de 0 à 6
+
+    this->_cases[1] = ligne1;
+    this->_cases[2] = ligne2;
+    this->_cases[3] = ligne3;
+    this->_cases[4] = ligne4;
+    this->_cases[5] = ligne5;
+    this->_cases[6] = ligne6;
 
 
 	this->_motDePasse = "1234";
@@ -68,7 +71,7 @@ void machineDistributrice::addVente(Produit* produit)
 void machineDistributrice::vente( int id)
 {
     int firstNum = id / 10;
-    int secondNum = id % 10;
+    int secondNum = (id % 10);
 
 
 
@@ -106,7 +109,7 @@ Produit* machineDistributrice::getProduit(int id)
 int machineDistributrice::getQuantite(int id)
 {
     int firstNum = id / 10;
-    int secondNum = id % 10;
+    int secondNum = (id % 10)-1;
     return _cases[firstNum][secondNum]._produits.size();
 }
 
