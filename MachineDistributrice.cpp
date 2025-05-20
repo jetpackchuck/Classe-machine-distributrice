@@ -1,5 +1,4 @@
 #include <iostream>
-#include <map>
 #include <vector>
 #include <fstream>
 #include "MachineDistributrice.h"
@@ -58,6 +57,7 @@ void machineDistributrice::newMachine(Produit* p1, Produit* p2, Produit* p3, Pro
 	this->_cases.push_back(ligne5);
 	this->_cases.push_back(ligne6);
 
+
 	this->_motDePasse = "1234";
 }
 
@@ -69,9 +69,15 @@ void machineDistributrice::vente( int id)
 {
     int firstNum = id / 10;
     int secondNum = id % 10;
-    this->addVente(this->getProduit(id));
 
-    this->_cases[firstNum][secondNum]._produits.pop();
+
+
+    if (_cases[firstNum][secondNum]._produits.empty()) {
+
+        return;
+    }
+    this->addVente(this->getProduit(id));
+    _cases[firstNum][secondNum]._produits.pop();
 
 
 
@@ -124,6 +130,11 @@ Cases machineDistributrice::getCase(int id)
 
         }
     }
+}
+
+std::list<Produit *> &machineDistributrice::getLogVentes()
+{
+    return _logVentes;
 }
 
 

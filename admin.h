@@ -23,6 +23,8 @@ private slots:
 
     void on_refill_pressed();
 
+    void on_voirStats_clicked();
+
 private:
     Ui::Admin *ui;
     machineDistributrice* m_machine;

@@ -6,7 +6,7 @@
 class machineDistributrice
 {
 private:
-	std::vector<std::vector<Cases>> _cases;
+    std::vector<std::vector<Cases>> _cases;
     std::list<Produit*> _logVentes;
 	std::string _motDePasse;
 public:
@@ -19,4 +19,5 @@ public:
     int getQuantite(int id);
     std::string getMotDePasse();
     Cases getCase(int id);
+    std::list<Produit*>& getLogVentes();
 };
