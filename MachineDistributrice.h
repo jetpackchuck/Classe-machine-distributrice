@@ -18,6 +18,6 @@ public:
     Produit* getProduit(int id) ;
     int getQuantite(int id);
     std::string getMotDePasse();
-    Cases getCase(int id);
+    Cases& getCase(int id);
     std::list<Produit*>& getLogVentes();
 };

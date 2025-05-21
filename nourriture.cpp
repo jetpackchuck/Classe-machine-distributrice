@@ -1,5 +1,4 @@
 #include "nourriture.h"
-#include<iostream>
 
 Nourriture::Nourriture() {}
 

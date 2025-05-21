@@ -3,9 +3,7 @@
 #include <QLabel>
 #include <QPushButton>
 #include "produit.h"
-#include "boisson.h"
 #include "fproduit1.h"
-#include "nourriture.h"
 #include "admin.h"
 #include <QInputDialog>
 #include <QMessageBox>
@@ -50,17 +48,6 @@ void MainWindow::afficherTousLesProduits()
 void MainWindow::setMachine(machineDistributrice* machine) {
     this->machine = machine;
     afficherTousLesProduits();
-
-
-
-   /* connect(ui->Bouton_1, &QPushButton::pressed, this, &MainWindow::on_Bouton_1_pressed);
-    connect(ui->Bouton_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_2_pressed);
-    connect(ui->Bouton_3, &QPushButton::pressed, this, &MainWindow::on_Bouton_3_pressed);
-    connect(ui->Bouton_4, &QPushButton::pressed, this, &MainWindow::on_Bouton_4_pressed);
-    connect(ui->Bouton_5, &QPushButton::pressed, this, &MainWindow::on_Bouton_5_pressed);
-    connect(ui->Bouton_6, &QPushButton::pressed, this, &MainWindow::on_Bouton_6_pressed);
-    connect(ui->Bouton_Validation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Validation_2_pressed);
-    connect(ui->Bouton_Annulation_2, &QPushButton::pressed, this, &MainWindow::on_Bouton_Annulation_2_pressed);*/
 
     ui->productName_11->setText(QString::fromStdString(machine->getProduit(11)->getNom())+ QString(" 11"));
     ui->productName_12->setText(QString::fromStdString(machine->getProduit(12)->getNom())+ QString(" 12"));
@@ -203,7 +190,7 @@ ui->label_2->setText("Choix invalide");
         if(_choix.size()==2 && _choix[1]!='6')
         {
             ui->label_2->setText("Choix validé");
-            machine->vente(/*machine,*/ stoi(_choix));
+            machine->vente(stoi(_choix));
             if(machine->getQuantite(stoi(_choix)) == 0)
             {
                 QLabel* label = this->findChild<QLabel*>(QString("estVide_%1").arg(QString::fromStdString(_choix)));
@@ -214,7 +201,7 @@ ui->label_2->setText("Choix invalide");
             _choix = "";
         }
         else{
-            ui->label_2->setText("X");
+            ui->label_2->setText("Choix invalide");
             _choix = "";
         }
     }

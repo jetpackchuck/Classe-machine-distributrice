@@ -42,6 +42,7 @@ void Admin::on_refill_pressed()
     }
     else
     {
+        ui->reponse->setText("Refill fait avec succès");
         m_machine->getCase(ui->id->text().toInt()).refill(ui->Quantite->text().toInt());
     }
 }

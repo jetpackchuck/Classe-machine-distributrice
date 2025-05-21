@@ -20,14 +20,14 @@ QVector<Produit*> chargerProduitsDepuisCSV(const QString& chemin) {
     }
 
     QTextStream stream(&fichier);
-    stream.readLine(); // Lire l'entête
+    stream.readLine();
 
     while (!stream.atEnd()) {
         QString ligne = stream.readLine();
         QStringList elements = ligne.split(',');
 
         if (elements.size() >= 7) {
-            // Exemple de parsing
+
             QString nom = elements[0];
             QString type = elements[1];
             float prixAchat = elements[2].toFloat();
@@ -85,11 +85,13 @@ int main(int argc, char *argv[])
             produits[20], produits[21], produits[22], produits[23], produits[24],
             produits[25], produits[26], produits[27], produits[28], produits[29]
             );
+
     }
 
     MainWindow w;
     Admin* admin = new Admin(machine);
     w.setMachine(machine);
+
     w.show();
 
     return a.exec();

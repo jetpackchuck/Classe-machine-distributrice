@@ -1,5 +1,4 @@
 #include "produit.h"
-#include <iostream>
 using namespace std;
 
 Produit::Produit() {

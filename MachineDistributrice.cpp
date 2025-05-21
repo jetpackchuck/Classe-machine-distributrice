@@ -51,7 +51,7 @@ void machineDistributrice::newMachine(Produit* p1, Produit* p2, Produit* p3, Pro
 	ligne6.push_back(Cases(65, p30, 10));
 
 
-    this->_cases.resize(7); // Crée les index de 0 à 6
+    this->_cases.resize(7);
 
     this->_cases[1] = ligne1;
     this->_cases[2] = ligne2;
@@ -71,7 +71,7 @@ void machineDistributrice::addVente(Produit* produit)
 void machineDistributrice::vente( int id)
 {
     int firstNum = id / 10;
-    int secondNum = (id % 10);
+    int secondNum = (id % 10)-1;
 
 
 
@@ -84,10 +84,10 @@ void machineDistributrice::vente( int id)
 
 
 
-    ofstream profit("Profit.txt",ios::app);
+    ofstream profit("Profit.txt",std::ios::app);
     if (profit.is_open())
     {
-        profit << ";"; //Avant ou apres ?
+        profit << ";";
         profit << this->getProduit(id)->getPrixVente()-this->getProduit(id)->getPrixAchat();
     }
     profit.close();
@@ -123,14 +123,13 @@ void machineDistributrice::setMotDePasse(std::string newPW)
     this->_motDePasse = newPW;
 }
 
-Cases machineDistributrice::getCase(int id)
+Cases& machineDistributrice::getCase(int id)
 {
     for (auto& ligne : _cases) {
         for (auto& c : ligne) {
             if (c._id == id) {
                 return c;
             }
-
         }
     }
 }

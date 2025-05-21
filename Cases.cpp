@@ -1,6 +1,7 @@
 #include "Cases.h"
 #include "fstream"
 #include "produit.h"
+#include <QDebug>
 
 using namespace std;
 
@@ -21,8 +22,9 @@ void Cases::refill(int quantite)
 	for (size_t i = 0; i < quantite; i++)
 	{
         this->_produits.push(this->_produit);
+
 	}
-	ofstream profit("Profit.txt");
+    ofstream profit("Profit.txt",ios::app);
 	if (profit.is_open())
 	{
 		profit << ";";
