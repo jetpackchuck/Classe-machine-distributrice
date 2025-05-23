@@ -17,7 +17,7 @@ void machineDistributrice::newMachine(Produit* p1, Produit* p2, Produit* p3, Pro
 
 	vector<Cases> ligne2;
 	ligne2.push_back(Cases(21, p6, 10));
-	ligne2.push_back(Cases(22, p6, 10));
+	ligne2.push_back(Cases(22, p7, 10));
 	ligne2.push_back(Cases(23, p8, 10));
 	ligne2.push_back(Cases(24, p9, 10));
 	ligne2.push_back(Cases(25, p10, 10));
