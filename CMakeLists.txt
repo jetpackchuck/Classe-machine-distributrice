@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(projetFinal VERSION 0.1 LANGUAGES CXX)
+project(Qt_MachineDistributrice VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -9,83 +9,66 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+# Trouver Qt avec Widgets et Charts, pour Qt5 et Qt6
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Charts)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Charts)
 
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+    main.cpp
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
+
+    boisson.cpp
+    Cases.cpp
+    CSVParser.cpp
+    fproduit1.cpp
+    nourriture.cpp
+    MachineDistributrice.cpp
+    produit.cpp
+    admin.cpp
+    fonction.cpp
+
+    boisson.h
+    Cases.h
+    CSVParser.h
+    fproduit1.h
+    nourriture.h
+    mainwindow.h
+    MachineDistributrice.h
+    produit.h
+    admin.h
+    fonction.h
+    Parser.h
+
+    fproduit1.ui
+    admin.ui
+    ressources.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(projetFinal
+    qt_add_executable(Qt_MachineDistributrice
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        boisson.cpp
-        Cases.cpp
-        CSVParser.cpp
-        CSVParser.cpp
-        CSVParser.cpp
-        fproduit1.cpp
-        fproduit1.cpp
-        nourriture.cpp
-        nourriture.cpp
-        CSVParser.cpp
-        CSVParser.cpp
-        CSVParser.cpp
-        CSVParser.cpp
-        MachineDistributrice.cpp
-        main.cpp
-        mainwindow.cpp
-        produit.cpp
-        boisson.h
-        Cases.h
-        CSVParser.h
-        mainwindow.h
-        MachineDistributrice.h
-        nourriture.h
-        produit.h
-
-        fproduit1.ui
-        ../../testQT/mainwindow.ui
-        ../../testQT/mainwindow.ui
-        admin.h admin.cpp admin.ui
-        fproduit1.h
-        fproduit1.cpp
-        fonction.h
-        Parser.h
-        fonction.cpp
-        ressources.qrc
     )
-# Define target properties for Android with Qt 6 as:
-#    set_property(TARGET projetFinal APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
-#                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
-# For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(projetFinal SHARED
-            ${PROJECT_SOURCES}
-        )
-# Define properties for Android with Qt 5 after find_package() calls as:
-#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
+        add_library(Qt_MachineDistributrice SHARED ${PROJECT_SOURCES})
     else()
-        add_executable(projetFinal
-            ${PROJECT_SOURCES}
-        )
+        add_executable(Qt_MachineDistributrice ${PROJECT_SOURCES})
     endif()
 endif()
 
-target_link_libraries(projetFinal PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(Qt_MachineDistributrice PRIVATE
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Charts
+)
 
-# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
-# If you are developing for iOS or macOS you should consider setting an
-# explicit, fixed bundle identifier manually though.
 if(${QT_VERSION} VERSION_LESS 6.1.0)
-  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.projetFinal)
+    set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.Qt_MachineDistributrice)
 endif()
-set_target_properties(projetFinal PROPERTIES
+
+set_target_properties(Qt_MachineDistributrice PROPERTIES
     ${BUNDLE_ID_OPTION}
     MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
     MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
@@ -94,12 +77,12 @@ set_target_properties(projetFinal PROPERTIES
 )
 
 include(GNUInstallDirs)
-install(TARGETS projetFinal
+install(TARGETS Qt_MachineDistributrice
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(projetFinal)
+    qt_finalize_executable(Qt_MachineDistributrice)
 endif()
